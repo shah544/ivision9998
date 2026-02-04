@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Big4 Consultancy | Professional Advisory Services in Saudi Arabia</title>
+    <meta name="description" content="Big4 Consultancy provides accounting, tax, and corporate services in Saudi Arabia. Our team consists of qualified Chartered Accountants with Big-4 experience.">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;family=Playfair+Display:wght@700&amp;display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="container nav-container">
+            <a href="#" class="logo">
+                <i class="fa-solid fa-eye"></i> IVISION Consultancy
+            </a>
+            
+            <nav>
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="#about" class="nav-link">About Us</a></li>
+                    <li><a href="#services" class="nav-link">Services</a></li>
+                    <li><a href="#clients" class="nav-link">Clients</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                    <li class="nav-btn-wrapper">
+                        <a href="mailto:suleman@ivisionconsultancy.com" class="btn btn-primary" style="padding: 10px 24px; font-size: 0.9rem;">Request a Consultation</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <button class="mobile-menu-btn" onclick="toggleMenu()" aria-label="Toggle Navigation">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-content reveal">
+                <h1>Expert Advisory Services in Saudi Arabia</h1>
+                <p>We support local and international businesses with compliance, structuring, and financial advisory services.</p>
+                
+                <div class="hero-buttons">
+                    <a href="#services" class="btn btn-primary">Our Services</a>
+                    <a href="#contact" class="btn btn-outline">Contact Us</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Slider Section -->
+        <div class="slider-section reveal">
+            <div class="slider-container" id="imageSlider">
+                <div class="slider-track" id="sliderTrack">
+                    <!-- Slide 1: Office Work -->
+                    <div class="slide active">
+                        <img src="https://z-cdn-media.chatglm.cn/files/ca726bb3-955f-446c-a85a-dc33fffa0648.png?auth_key=1870112184-216c6635a1874411b9078e16cd956e2c-0-509e1eb1106d389f7d90e18b20928d0b" alt="Professional Office Work">
+                        <div class="slide-caption">
+                            <h3>Focus &amp; Precision</h3>
+                            <p>Our dedicated team ensures every detail of your financial compliance is handled with the utmost accuracy.</p>
+                        </div>
+                    </div>
+                    <!-- Slide 2: Meeting -->
+                    <div class="slide">
+                        <img src="https://z-cdn-media.chatglm.cn/files/328d0bd2-a9bb-4a79-a65c-6f83505960a3.png?auth_key=1870112184-b72d9d363af84725a6661d6e8e564d32-0-9442f88f425122033f9496b586159a55" alt="Team Collaboration">
+                        <div class="slide-caption">
+                            <h3>Collaborative Approach</h3>
+                            <p>We work closely with your stakeholders to develop strategies that drive growth and efficiency.</p>
+                        </div>
+                    </div>
+                    <!-- Slide 3: City/Big4 -->
+                    <div class="slide">
+                        <img src="https://z-cdn-media.chatglm.cn/files/82979519-0350-4bd3-a692-6b3e5f14822d.png?auth_key=1870112184-85062ebdabcb4077a0a745683446c9fe-0-5fd403eee96a64bb17e8a5efc96366f9" alt="Global Standards">
+                        <div class="slide-caption">
+                            <h3>Big-4 Standards</h3>
+                            <p>Bringing world-class advisory experience and methodologies to the Saudi market.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Controls -->
+                <button class="slider-btn prev-btn" id="prevBtn"><i class="fa-solid fa-chevron-left"></i></button>
+                <button class="slider-btn next-btn" id="nextBtn"><i class="fa-solid fa-chevron-right"></i></button>
+
+                <!-- Dots -->
+                <div class="slider-dots" id="sliderDots"></div>
+            </div>
+        </div>
+
+        <!-- About Section -->
+        <section id="about" class="section-padding">
+            <div class="container">
+                <div class="about-grid">
+                    <div class="about-text reveal">
+                        <span style="color: var(--secondary-color); font-weight: 700; text-transform: uppercase; font-size: 0.85rem; letter-spacing: 2px; display: block; margin-bottom: 10px;">Who We Are</span>
+                        <h2>Professional Advisory Firm with Big-4 Experience</h2>
+                        <p>Big4 Consultancy is a professional advisory firm providing accounting, tax, and corporate services in Saudi Arabia. Our team consists of qualified Chartered Accountants and consultants with Big-4 firm experience and strong local regulatory knowledge.</p>
+                        <p>We support local and international businesses with compliance, structuring, and financial advisory services, helping them operate efficiently while meeting all Saudi regulatory requirements. Our focus is on practical solutions, regulatory compliance, and long-term client relationships.</p>
+                        
+                        <div class="about-features">
+                            <div class="feature-item"></div>
+                            <div class="feature-item"></div>
+                            <div class="feature-item"></div>
+                            <div class="feature-item"></div>
+                        </div>
+                    </div>
+                    <div class="about-image reveal">
+                        <img src="https://z-cdn-media.chatglm.cn/files/83754821-9a72-4325-9539-549327c76010.png?auth_key=1870113443-52672ada811f46aa84ff2d1aa3d29e90-0-7810f9dad64c9e9e24e56567eeb6d964" alt="Saudi Business Consultation Meeting" loading="lazy">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="section-padding services">
+            <div class="container">
+                <!-- Header Text (Hidden when detail is open) -->
+                <div class="text-center reveal" id="services-header-text">
+                    <h2 class="section-title">Our Services</h2>
+                    <p class="section-subtitle">Comprehensive financial and compliance solutions tailored for your business needs in the Kingdom.</p>
+                </div>
+
+                <!-- Services Grid (Hidden when detail is open) -->
+                <div class="services-grid" id="services-grid-container">
+                    <!-- Service 1: CFO -->
+                    <div class="service-card reveal">
+                        <div class="service-icon"><i class="fa-solid fa-user-tie"></i></div>
+                        <h3>CFO Services</h3>
+                        <p>Support businesses with financial planning, budgeting, cash flow management, reporting, and strategic financial decision-making.</p>
+                        <button onclick="openServiceDetail('cfo')" class="read-more">Learn more <i class="fa-solid fa-arrow-right"></i></button>
+                    </div>
+
+                    <!-- Service 2: Corporate Structuring -->
+                    <div class="service-card reveal">
+                        <div class="service-icon"><i class="fa-solid fa-sitemap"></i></div>
+                        <h3>Corporate Structuring</h3>
+                        <p>Designing and implementing effective corporate structures that support growth, operational efficiency, and regulatory compliance in Saudi Arabia.</p>
+                        <button onclick="openServiceDetail('structuring')" class="read-more">Learn more <i class="fa-solid fa-arrow-right"></i></button>
+                    </div>
+
+                    <!-- Service 3: Corporate Tax Compliance -->
+                    <div class="service-card reveal">
+                        <div class="service-icon"><i class="fa-solid fa-file-invoice-dollar"></i></div>
+                        <h3>Corporate Tax Compliance</h3>
+                        <p>Managing corporate tax registrations, filings, and compliance requirements, ensuring timely and accurate submissions in line with Saudi tax laws.</p>
+                        <button onclick="openServiceDetail('tax')" class="read-more">Learn more <i class="fa-solid fa-arrow-right"></i></button>
+                    </div>
+
+                    <!-- Service 4: Zakat Services -->
+                    <div class="service-card reveal">
+                        <div class="service-icon"><i class="fa-solid fa-hand-holding-dollar"></i></div>
+                        <h3>Zakat Services</h3>
+                        <p>End-to-end Zakat compliance services, including calculation, filing, review support, and liaison with ZATCA to ensure full compliance.</p>
+                        <button onclick="openServiceDetail('zakat')" class="read-more">Learn more <i class="fa-solid fa-arrow-right"></i></button>
+                    </div>
+
+                    <!-- Service 5: VAT Services -->
+                    <div class="service-card reveal">
+                        <div class="service-icon"><i class="fa-solid fa-percent"></i></div>
+                        <h3>VAT Services</h3>
+                        <p>Registration, return filing, advisory, compliance reviews, and support during audits to help businesses meet Saudi VAT requirements.</p>
+                        <button onclick="openServiceDetail('vat')" class="read-more">Learn more <i class="fa-solid fa-arrow-right"></i></button>
+                    </div>
+
+                    <!-- Service 6: Withholding Tax -->
+                    <div class="service-card reveal">
+                        <div class="service-icon"><i class="fa-solid fa-money-bill-transfer"></i></div>
+                        <h3>Withholding Tax</h3>
+                        <p>Assistance with withholding tax calculations, filings, and compliance to ensure correct treatment of cross-border payments.</p>
+                        <button onclick="openServiceDetail('wht')" class="read-more">Learn more <i class="fa-solid fa-arrow-right"></i></button>
+                    </div>
+
+                    <!-- Service 7: GOSI Compliance -->
+                    <div class="service-card reveal">
+                        <div class="service-icon"><i class="fa-solid fa-users-gear"></i></div>
+                        <h3>GOSI Compliance</h3>
+                        <p>Support companies with GOSI registration, monthly compliance, employee updates, and regulatory reporting in accordance with Saudi labor laws.</p>
+                        <button onclick="openServiceDetail('gosi')" class="read-more">Learn more <i class="fa-solid fa-arrow-right"></i></button>
+                    </div>
+
+                    <!-- Service 8: Bookkeeping -->
+                    <div class="service-card reveal">
+                        <div class="service-icon"><i class="fa-solid fa-book-open"></i></div>
+                        <h3>Bookkeeping</h3>
+                        <p>Reliable bookkeeping and accounting services, including monthly accounts, financial reporting, and management reports tailored to your needs.</p>
+                        <button onclick="openServiceDetail('bookkeeping')" class="read-more">Learn more <i class="fa-solid fa-arrow-right"></i></button>
+                    </div>
+
+                    <!-- Service 9: Tax Advisory -->
+                    <div class="service-card reveal">
+                        <div class="service-icon"><i class="fa-solid fa-magnifying-glass-chart"></i></div>
+                        <h3>Tax Advisory</h3>
+                        <p>Professional tax advisory services to help businesses understand and manage their tax obligations in Saudi Arabia with practical, compliant advice.</p>
+                        <button onclick="openServiceDetail('advisory')" class="read-more">Learn more <i class="fa-solid fa-arrow-right"></i></button>
+                    </div>
+
+                     <!-- Service 10: Actuarial -->
+                     <div class="service-card reveal">
+                        <div class="service-icon"><i class="fa-solid fa-calculator"></i></div>
+                        <h3>Actuarial Services</h3>
+                        <p>Actuarial support for employee benefit calculations, end-of-service benefits, and other actuarial requirements in compliance with local standards.</p>
+                        <button onclick="openServiceDetail('actuarial')" class="read-more">Learn more <i class="fa-solid fa-arrow-right"></i></button>
+                    </div>
+
+                     <!-- Service 11: Incorporation -->
+                     <div class="service-card reveal">
+                        <div class="service-icon"><i class="fa-solid fa-rocket"></i></div>
+                        <h3>Incorporation Services</h3>
+                        <p>Assist local and foreign investors with company incorporation in Saudi Arabia, including licensing, registrations, and regulatory approvals.</p>
+                        <button onclick="openServiceDetail('incorporation')" class="read-more">Learn more <i class="fa-solid fa-arrow-right"></i></button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- === DETAIL VIEWS (Hidden by default) === -->
+
+            <!-- 1. CFO Detail -->
+            <div id="detail-cfo" class="service-detail-container container">
+                <div class="back-btn" onclick="closeServiceDetail()"><i class="fa-solid fa-arrow-left"></i> Back to Services</div>
+                <div class="detail-header">
+                    <h2>CFO Services in Saudi Arabia</h2>
+                    <p class="detail-intro">Big4 Consultancy provides professional CFO services in Saudi Arabia, supporting business owners, CEOs, and management teams with strategic financial leadership, control, and decision-making support. Our outsourced CFO services are designed for businesses that need senior financial expertise without the cost of a full-time CFO.</p>
+                </div>
+                <div class="detail-grid">
+                    <div class="detail-content">
+                        <h3>Detailed Service Explanation</h3>
+                        <p>In today’s competitive and regulated Saudi business environment, strong financial leadership is essential. Our CFO services help businesses improve profitability, manage cash flow, strengthen financial controls, and support sustainable growth while remaining fully compliant with Saudi regulations. Our services go beyond traditional accounting; we act as a strategic partner to business owners and management, providing clear financial insights that support informed decision-making. We work closely with leadership teams to understand business objectives, identify financial risks, and implement strategies that improve performance and financial stability.</p>
+                        
+                        <h3>Key Deliverables</h3>
+                        <ul class="detail-list">
+                            <li><strong>Financial Planning &amp; Budgeting:</strong> Support with budgeting, forecasting, and financial planning to improve visibility and control over financial performance.</li>
+                            <li><strong>Cash Flow &amp; Working Capital Management:</strong> Helping businesses manage cash flow, optimize working capital, and maintain financial stability.</li>
+                            <li><strong>Management Reporting &amp; Analysis:</strong> Preparing clear and insightful management reports to help leadership understand performance, trends, and key financial drivers.</li>
+                            <li><strong>Financial Controls &amp; Governance:</strong> Strengthening internal controls, financial processes, and governance structures to reduce risk and support compliance.</li>
+                            <li><strong>Strategic Advisory &amp; Business Support:</strong> Supporting key business decisions, expansion plans, restructuring, and investment initiatives with strong financial analysis.</li>
+                        </ul>
+                    </div>
+                    <div class="detail-sidebar">
+                        <div class="sidebar-box">
+                            <div class="sidebar-title">Who This Is For</div>
+                            <div class="sidebar-content">Business owners, CEOs, and management teams. Growing businesses requiring senior financial oversight. Foreign investors and established companies seeking stronger financial leadership.</div>
+                        </div>
+                        <div class="sidebar-box regulatory-box">
+                            <div class="sidebar-title">Regulatory Relevance</div>
+                            <div class="sidebar-content">Saudi Vision 2030 emphasizes governance, transparency, and financial discipline. Our CFO services support these objectives by helping businesses implement strong financial management practices and achieve sustainable growth.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 2. Corporate Structuring Detail -->
+            <div id="detail-structuring" class="service-detail-container container">
+                <div class="back-btn" onclick="closeServiceDetail()"><i class="fa-solid fa-arrow-left"></i> Back to Services</div>
+                <div class="detail-header">
+                    <h2>Corporate Structuring Services in Saudi Arabia</h2>
+                    <p class="detail-intro">Big4 Consultancy provides expert corporate structuring services in Saudi Arabia, helping businesses establish strong, compliant, and efficient corporate structures that support growth and long-term success. We advise on structuring operations in line with Saudi regulations and commercial objectives.</p>
+                </div>
+                <div class="detail-grid">
+                    <div class="detail-content">
+                        <h3>Detailed Service Explanation</h3>
+                        <p>A well-designed corporate structure is critical for regulatory compliance, tax efficiency, operational control, and risk management. Our role is to ensure that your business is structured correctly from the beginning and remains flexible as your operations expand. Our corporate structuring services are designed to support business growth, governance, and regulatory compliance. We take a commercial approach, ensuring that corporate structures are not only compliant but also support day-to-day operations, decision-making, and long-term strategy.</p>
+                        
+                        <h3>Key Deliverables</h3>
+                        <ul class="detail-list">
+                            <li><strong>Business Setup &amp; Entity Structuring:</strong> Advising on the most suitable legal structure for your business, including foreign-owned entities, joint ventures, and group structures.</li>
+                            <li><strong>Holding &amp; Group Structures:</strong> Designing efficient group and holding structures that support governance, operational efficiency, and future expansion.</li>
+                            <li><strong>Regulatory &amp; Compliance Alignment:</strong> Ensuring corporate structures comply with Saudi laws, licensing requirements, and ongoing regulatory obligations.</li>
+                            <li><strong>Tax-Efficient Structuring:</strong> Working closely with our tax advisory team to ensure structures are aligned with tax, Zakat, VAT, and withholding tax considerations.</li>
+                        </ul>
+                    </div>
+                    <div class="detail-sidebar">
+                        <div class="sidebar-box">
+                            <div class="sidebar-title">Who This Is For</div>
+                            <div class="sidebar-content">Local companies and multinational groups. Foreign investors entering the Saudi market. Businesses planning future expansion or restructuring.</div>
+                        </div>
+                        <div class="sidebar-box regulatory-box">
+                            <div class="sidebar-title">Regulatory Relevance</div>
+                            <div class="sidebar-content">Saudi Arabia’s business environment is evolving rapidly under Vision 2030. Our services support businesses in building compliant, transparent, and growth-focused structures aligned with the Kingdom’s regulatory framework.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 3. Corporate Tax Compliance Detail -->
+            <div id="detail-tax" class="service-detail-container container">
+                <div class="back-btn" onclick="closeServiceDetail()"><i class="fa-solid fa-arrow-left"></i> Back to Services</div>
+                <div class="detail-header">
+                    <h2>Corporate Tax Compliance Services in Saudi Arabia</h2>
+                    <p class="detail-intro">Big4 Consultancy provides comprehensive corporate tax compliance services in Saudi Arabia, supporting businesses with accurate registration, timely filings, and ongoing compliance in accordance with Saudi tax laws and ZATCA regulations. We help companies meet their corporate tax obligations efficiently while minimizing compliance risks and penalties.</p>
+                </div>
+                <div class="detail-grid">
+                    <div class="detail-content">
+                        <h3>Detailed Service Explanation</h3>
+                        <p>Corporate tax compliance in Saudi Arabia requires accuracy, timely reporting, and a clear understanding of regulatory requirements. Our role is to ensure that your corporate tax obligations are managed correctly, consistently, and without disruption to your business operations. We support businesses across all industries by managing their corporate tax compliance requirements from start to finish. Our services are designed to give business owners and management peace of mind, knowing that filings are accurate, deadlines are met, and regulatory expectations are fully satisfied.</p>
+                        
+                        <h3>Key Deliverables</h3>
+                        <ul class="detail-list">
+                            <li><strong>Corporate Tax Registration:</strong> Assisting businesses with corporate tax registration and ensuring all regulatory requirements are completed accurately and on time.</li>
+                            <li><strong>Corporate Tax Return Preparation &amp; Filing:</strong> Preparing and filing corporate tax returns in accordance with Saudi tax laws, ensuring accuracy and timely submission to ZATCA.</li>
+                            <li><strong>Ongoing Compliance &amp; Advisory Support:</strong> Providing continuous support throughout the year, addressing tax-related queries, regulatory updates, and compliance requirements.</li>
+                            <li><strong>ZATCA Audit &amp; Review Support:</strong> Assisting businesses during ZATCA reviews and audits, including documentation support, responses to queries, and professional representation.</li>
+                        </ul>
+                    </div>
+                    <div class="detail-sidebar">
+                        <div class="sidebar-box">
+                            <div class="sidebar-title">Who This Is For</div>
+                            <div class="sidebar-content">Companies across all industries operating in Saudi Arabia. Foreign-owned entities requiring local tax compliance. Businesses seeking to minimize exposure and penalties.</div>
+                        </div>
+                        <div class="sidebar-box regulatory-box">
+                            <div class="sidebar-title">Regulatory Relevance</div>
+                            <div class="sidebar-content">Saudi Arabia’s tax framework continues to evolve in line with Vision 2030, increasing the importance of transparency and compliance. Our services help businesses stay up to date with regulatory changes while maintaining efficient operations.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 4. Zakat Services Detail -->
+            <div id="detail-zakat" class="service-detail-container container">
+                <div class="back-btn" onclick="closeServiceDetail()"><i class="fa-solid fa-arrow-left"></i> Back to Services</div>
+                <div class="detail-header">
+                    <h2>Zakat Services in Saudi Arabia</h2>
+                    <p class="detail-intro">Big4 Consultancy provides comprehensive Zakat services in Saudi Arabia, supporting businesses with accurate calculation, optimal Zakat planning, filing, and full compliance in accordance with ZATCA regulations. We assist local companies, foreign-owned entities, and group structures in managing their Zakat obligations efficiently and with confidence.</p>
+                </div>
+                <div class="detail-grid">
+                    <div class="detail-content">
+                        <h3>Detailed Service Explanation</h3>
+                        <p>Zakat compliance in Saudi Arabia requires a clear understanding of regulatory guidelines, accurate financial data, and proper documentation. Our role is to ensure that your Zakat obligations are managed correctly while minimizing risks, disputes, and unnecessary assessments. Our Zakat services are designed to support businesses by combining technical expertise with commercial understanding. We help businesses achieve optimal Zakat outcomes within the framework of Saudi regulations, ensuring compliance without overpayment or regulatory exposure.</p>
+                        
+                        <h3>Key Deliverables</h3>
+                        <ul class="detail-list">
+                            <li><strong>Zakat Calculation &amp; Review:</strong> Preparing and reviewing Zakat calculations in line with ZATCA guidelines, ensuring accuracy, consistency, and proper treatment of assets and liabilities.</li>
+                            <li><strong>Optimal Zakat Planning:</strong> Advising on optimal Zakat positions by reviewing business structures, transactions, and financial data to ensure fair and compliant Zakat assessments.</li>
+                            <li><strong>Zakat Return Filing:</strong> Managing the preparation and filing of Zakat returns, ensuring timely submission and accurate reporting to ZATCA.</li>
+                            <li><strong>ZATCA Liaison &amp; Audit Support:</strong> Supporting businesses during ZATCA reviews, assessments, and audits, including documentation support and professional representation.</li>
+                        </ul>
+                    </div>
+                    <div class="detail-sidebar">
+                        <div class="sidebar-box">
+                            <div class="sidebar-title">Who This Is For</div>
+                            <div class="sidebar-content">Local companies subject to Zakat. Foreign-owned entities and group structures. Businesses requiring support during regulatory reviews.</div>
+                        </div>
+                        <div class="sidebar-box regulatory-box">
+                            <div class="sidebar-title">Regulatory Relevance</div>
+                            <div class="sidebar-content">Zakat compliance plays a key role in Saudi Arabia’s regulatory framework under Vision 2030, emphasizing transparency and governance. Our services support businesses in meeting these objectives while maintaining efficient and compliant operations.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 5. VAT Services Detail -->
+            <div id="detail-vat" class="service-detail-container container">
+                <div class="back-btn" onclick="closeServiceDetail()"><i class="fa-solid fa-arrow-left"></i> Back to Services</div>
+                <div class="detail-header">
+                    <h2>VAT Services in Saudi Arabia</h2>
+                    <p class="detail-intro">Big4 Consultancy provides professional VAT services in Saudi Arabia, helping businesses comply with Saudi VAT regulations while managing risks and maintaining operational efficiency. We support local companies, multinational groups, and foreign-owned entities with end-to-end VAT advisory and compliance services in line with ZATCA requirements.</p>
+                </div>
+                <div class="detail-grid">
+                    <div class="detail-content">
+                        <h3>Detailed Service Explanation</h3>
+                        <p>VAT compliance in Saudi Arabia is complex and closely monitored by ZATCA. Errors in VAT registration, filings, or treatment of transactions can lead to penalties, audits, and cash flow issues. Our role is to ensure that your VAT obligations are managed accurately, efficiently, and with confidence. Our VAT services are designed for business owners and management who need clear, practical advice. We explain VAT requirements, assess VAT impact on transactions, and implement solutions that support business operations without disrupting day-to-day activities.</p>
+                        
+                        <h3>Key Deliverables</h3>
+                        <ul class="detail-list">
+                            <li><strong>VAT Registration &amp; Deregistration:</strong> Assisting businesses with VAT registration, amendments, and deregistration, ensuring correct classification and timely submissions.</li>
+                            <li><strong>VAT Return Preparation &amp; Filing:</strong> Preparing and filing VAT returns accurately and on time, ensuring compliance with Saudi VAT laws and ZATCA guidelines.</li>
+                            <li><strong>VAT Advisory &amp; Transaction Support:</strong> Advising on VAT treatment of local and cross-border transactions, contracts, imports, exports, and special supplies to reduce VAT risks.</li>
+                            <li><strong>VAT Audit &amp; ZATCA Support:</strong> Supporting businesses during ZATCA VAT audits and reviews, including documentation preparation and professional representation.</li>
+                        </ul>
+                    </div>
+                    <div class="detail-sidebar">
+                        <div class="sidebar-box">
+                            <div class="sidebar-title">Who This Is For</div>
+                            <div class="sidebar-content">Local businesses and multinational groups. Foreign-owned entities operating in the Kingdom. Companies requiring complex transaction advisory.</div>
+                        </div>
+                        <div class="sidebar-box regulatory-box">
+                            <div class="sidebar-title">Regulatory Relevance</div>
+                            <div class="sidebar-content">VAT compliance is a key pillar of Saudi Arabia’s regulatory framework under Vision 2030, promoting transparency and governance. Our services help businesses meet these requirements while operating efficiently in a competitive market.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+             <!-- 6. Withholding Tax Detail -->
+             <div id="detail-wht" class="service-detail-container container">
+                <div class="back-btn" onclick="closeServiceDetail()"><i class="fa-solid fa-arrow-left"></i> Back to Services</div>
+                <div class="detail-header">
+                    <h2>Withholding Tax Services in Saudi Arabia</h2>
+                    <p class="detail-intro">Big4 Consultancy provides expert withholding tax services in Saudi Arabia, helping businesses manage withholding tax obligations on cross-border payments in full compliance with Saudi tax laws and ZATCA regulations. We support local companies, multinational groups, and foreign-owned entities in correctly applying withholding tax rules while minimizing risks and penalties.</p>
+                </div>
+                <div class="detail-grid">
+                    <div class="detail-content">
+                        <h3>Detailed Service Explanation</h3>
+                        <p>Withholding tax in Saudi Arabia applies to many payments made to non-residents, including services, royalties, management fees, and technical support. Incorrect treatment or late filings can lead to penalties, rejected deductions, and regulatory scrutiny. Our role is to ensure your withholding tax obligations are handled accurately and efficiently. We focus on helping businesses apply the correct tax treatment from the start, avoiding costly corrections later, and providing practical guidance on cross-border transactions.</p>
+                        
+                        <h3>Key Deliverables</h3>
+                        <ul class="detail-list">
+                            <li><strong>Withholding Tax Assessment &amp; Advisory:</strong> Reviewing cross-border transactions to determine withholding tax applicability, rates, and compliance requirements under Saudi regulations.</li>
+                            <li><strong>Withholding Tax Return Preparation &amp; Filing:</strong> Preparing and filing withholding tax returns accurately and on time, ensuring compliance with ZATCA filing requirements.</li>
+                            <li><strong>Double Tax Treaty Advisory:</strong> Advising on the application of double tax treaties, helping businesses benefit from reduced withholding tax rates where applicable.</li>
+                            <li><strong>ZATCA Audit &amp; Dispute Support:</strong> Assisting businesses during ZATCA reviews, assessments, and disputes related to withholding tax, including documentation support.</li>
+                        </ul>
+                    </div>
+                    <div class="detail-sidebar">
+                        <div class="sidebar-box">
+                            <div class="sidebar-title">Who This Is For</div>
+                            <div class="sidebar-content">Local companies making cross-border payments. Multinational groups and foreign-owned businesses. Businesses requiring treaty advisory and compliance support.</div>
+                        </div>
+                        <div class="sidebar-box regulatory-box">
+                            <div class="sidebar-title">Regulatory Relevance</div>
+                            <div class="sidebar-content">As Saudi Arabia expands international trade and investment under Vision 2030, withholding tax compliance has become increasingly important. Our services support businesses in managing international transactions while meeting Saudi regulatory expectations.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 7. GOSI Compliance Detail (NEW) -->
+            <div id="detail-gosi" class="service-detail-container container">
+                <div class="back-btn" onclick="closeServiceDetail()"><i class="fa-solid fa-arrow-left"></i> Back to Services</div>
+                <div class="detail-header">
+                    <h2>GOSI Compliance Services in Saudi Arabia</h2>
+                    <p class="detail-intro">Big4 Consultancy provides professional GOSI (Social Security) compliance services in Saudi Arabia, helping businesses meet their statutory obligations under Saudi labor and social insurance regulations. We support local companies, multinational groups, and foreign-owned entities with accurate registration, reporting, and ongoing compliance in line with GOSI requirements.</p>
+                </div>
+                <div class="detail-grid">
+                    <div class="detail-content">
+                        <h3>Detailed Service Explanation</h3>
+                        <p>GOSI compliance is mandatory for employers in Saudi Arabia, and errors in registration, employee classification, or monthly reporting can result in penalties and regulatory issues. Our role is to ensure your GOSI obligations are managed correctly, consistently, and without disruption to your business operations. Our GOSI services are designed for business owners and HR/finance teams who need clear, practical, and reliable support. We simplify GOSI requirements and ensure that employee registrations, contributions, and reporting are handled accurately and on time.</p>
+                        
+                        <h3>Key Deliverables</h3>
+                        <ul class="detail-list">
+                            <li><strong>GOSI Registration &amp; Employer Setup:</strong> Assisting businesses with employer registration under GOSI and ensuring correct setup from the start.</li>
+                            <li><strong>Employee Registration &amp; Updates:</strong> Managing employee registrations, additions, removals, and salary updates in accordance with Saudi labor and GOSI regulations.</li>
+                            <li><strong>Monthly GOSI Compliance &amp; Reporting:</strong> Handling monthly GOSI calculations and submissions, ensuring accurate contributions and timely compliance.</li>
+                            <li><strong>GOSI Audit &amp; Inquiry Support:</strong> Supporting businesses during GOSI inspections, reviews, and inquiries, including documentation support and professional responses.</li>
+                        </ul>
+                    </div>
+                    <div class="detail-sidebar">
+                        <div class="sidebar-box">
+                            <div class="sidebar-title">Who This Is For</div>
+                            <div class="sidebar-content">Employers in Saudi Arabia. HR and finance teams. Local and foreign-owned companies requiring workforce compliance.</div>
+                        </div>
+                        <div class="sidebar-box regulatory-box">
+                            <div class="sidebar-title">Regulatory Relevance</div>
+                            <div class="sidebar-content">Saudi Vision 2030 places strong emphasis on workforce governance, transparency, and compliance. Our GOSI services support businesses in meeting these objectives while managing employees efficiently and compliantly.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 8. Bookkeeping Detail (NEW) -->
+            <div id="detail-bookkeeping" class="service-detail-container container">
+                <div class="back-btn" onclick="closeServiceDetail()"><i class="fa-solid fa-arrow-left"></i> Back to Services</div>
+                <div class="detail-header">
+                    <h2>Bookkeeping and Accounting Services in Saudi Arabia</h2>
+                    <p class="detail-intro">Big4 Consultancy provides professional bookkeeping and accounting services in Saudi Arabia, helping businesses maintain accurate financial records, meet regulatory requirements, and make informed business decisions. We support local companies, multinational groups, and foreign-owned entities with reliable accounting solutions aligned with Saudi regulations and reporting standards.</p>
+                </div>
+                <div class="detail-grid">
+                    <div class="detail-content">
+                        <h3>Detailed Service Explanation</h3>
+                        <p>Accurate bookkeeping and accounting are essential for compliance, financial control, and business growth. Our role is to ensure that your financial records are well-maintained, up to date, and ready for tax, Zakat, VAT, and regulatory reporting. Our bookkeeping and accounting services are designed for business owners and management who need clear financial visibility and dependable reporting. We work closely with finance teams to ensure that accounting processes support day-to-day operations, compliance obligations, and strategic decision-making.</p>
+                        
+                        <h3>Key Deliverables</h3>
+                        <ul class="detail-list">
+                            <li><strong>Day-to-Day Bookkeeping:</strong> Managing daily bookkeeping activities, including recording transactions, reconciliations, and maintaining accurate ledgers.</li>
+                            <li><strong>Monthly and Periodic Accounting:</strong> Preparing monthly, quarterly, and annual accounts, ensuring timely and accurate financial reporting.</li>
+                            <li><strong>Financial Statements &amp; Reporting:</strong> Preparing financial statements and management reports to support decision-making and regulatory compliance.</li>
+                            <li><strong>Compliance-Ready Accounting:</strong> Ensuring accounting services support compliance with corporate tax, Zakat, VAT, and audit requirements.</li>
+                        </ul>
+                    </div>
+                    <div class="detail-sidebar">
+                        <div class="sidebar-box">
+                            <div class="sidebar-title">Who This Is For</div>
+                            <div class="sidebar-content">Business owners needing financial visibility. Companies requiring outsourced accounting. Foreign-owned entities needing local compliance.</div>
+                        </div>
+                        <div class="sidebar-box regulatory-box">
+                            <div class="sidebar-title">Regulatory Relevance</div>
+                            <div class="sidebar-content">Strong financial governance is a key objective of Saudi Vision 2030. Our bookkeeping and accounting services support transparency, accountability, and sustainable business growth in the Saudi market.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 9. Tax Advisory Detail (NEW) -->
+            <div id="detail-advisory" class="service-detail-container container">
+                <div class="back-btn" onclick="closeServiceDetail()"><i class="fa-solid fa-arrow-left"></i> Back to Services</div>
+                <div class="detail-header">
+                    <h2>Tax Advisory Services in Saudi Arabia</h2>
+                    <p class="detail-intro">Big4 Consultancy is a trusted provider of professional tax advisory services in Saudi Arabia, helping businesses stay compliant, reduce tax risks, and operate with confidence under ZATCA regulations. We advise local companies, multinational groups, and foreign investors across all stages of their business operations in the Kingdom.</p>
+                </div>
+                <div class="detail-grid">
+                    <div class="detail-content">
+                        <h3>Detailed Service Explanation</h3>
+                        <p>Saudi tax regulations are continuously evolving, and non-compliance can result in significant penalties, audits, and business disruption. Our role is to ensure that your business remains fully compliant while maintaining operational efficiency and financial control. Our tax advisory services go beyond technical compliance. We combine deep knowledge of Saudi tax laws with a commercial, business-focused approach, ensuring that tax decisions support profitability and long-term growth.</p>
+                        
+                        <h3>Key Deliverables</h3>
+                        <ul class="detail-list">
+                            <li><strong>Corporate Tax &amp; Zakat Advisory:</strong> Advising on corporate tax and Zakat matters, including planning, interpretation of regulations, risk assessment, and structuring.</li>
+                            <li><strong>VAT Advisory Services:</strong> Supporting businesses with VAT advisory, including transaction reviews, VAT treatment analysis, compliance support, and audit readiness.</li>
+                            <li><strong>Withholding Tax Advisory:</strong> Assisting businesses in managing withholding tax obligations on cross-border payments, ensuring correct application of rates and treaty benefits.</li>
+                            <li><strong>Tax Risk Management &amp; Audit Support:</strong> Helping businesses identify tax risks early, prepare for ZATCA audits, and manage disputes professionally.</li>
+                        </ul>
+                    </div>
+                    <div class="detail-sidebar">
+                        <div class="sidebar-box">
+                            <div class="sidebar-title">Who This Is For</div>
+                            <div class="sidebar-content">Local companies and multinational groups. Foreign investors and business owners. CFOs and finance managers needing strategic guidance.</div>
+                        </div>
+                        <div class="sidebar-box regulatory-box">
+                            <div class="sidebar-title">Regulatory Relevance</div>
+                            <div class="sidebar-content">Saudi Arabia’s regulatory environment is aligned with Vision 2030, emphasizing transparency, governance, and compliance. Our tax advisory services support businesses in meeting these objectives while maintaining competitiveness.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 10. Actuarial Services Detail (NEW) -->
+            <div id="detail-actuarial" class="service-detail-container container">
+                <div class="back-btn" onclick="closeServiceDetail()"><i class="fa-solid fa-arrow-left"></i> Back to Services</div>
+                <div class="detail-header">
+                    <h2>Actuarial Services in Saudi Arabia</h2>
+                    <p class="detail-intro">Big4 Consultancy provides professional actuarial services in Saudi Arabia, supporting businesses with accurate actuarial calculations, employee benefit valuations, and financial risk assessment in compliance with Saudi regulations and accounting standards. We work with local companies, multinational groups, and foreign-owned entities across multiple industries.</p>
+                </div>
+                <div class="detail-grid">
+                    <div class="detail-content">
+                        <h3>Detailed Service Explanation</h3>
+                        <p>Actuarial calculations play a critical role in financial reporting, employee benefits, and long-term financial planning. Our role is to ensure that actuarial obligations are measured accurately, transparently, and in line with regulatory and financial reporting requirements. Our actuarial services are designed for business owners, finance teams, and management who require accurate, defensible, and regulator-ready actuarial results.</p>
+                        
+                        <h3>Key Deliverables</h3>
+                        <ul class="detail-list">
+                            <li><strong>Employee End-of-Service Benefits (EOSB) Valuations:</strong> Performing actuarial valuations for employee end-of-service benefits in accordance with Saudi labor law and applicable accounting standards.</li>
+                            <li><strong>Employee Benefit Obligations:</strong> Supporting businesses with actuarial assessments of long-term employee benefit obligations, ensuring accurate recognition in financial statements.</li>
+                            <li><strong>Financial Reporting Support:</strong> Providing actuarial inputs required for financial reporting, audits, and regulatory reviews.</li>
+                            <li><strong>Actuarial Advisory &amp; Risk Assessment:</strong> Advising management on actuarial assumptions, financial impact, and long-term obligations to support sound financial planning.</li>
+                        </ul>
+                    </div>
+                    <div class="detail-sidebar">
+                        <div class="sidebar-box">
+                            <div class="sidebar-title">Who This Is For</div>
+                            <div class="sidebar-content">Companies with large workforces. Businesses needing financial reporting accuracy. Management planning for long-term liabilities.</div>
+                        </div>
+                        <div class="sidebar-box regulatory-box">
+                            <div class="sidebar-title">Regulatory Relevance</div>
+                            <div class="sidebar-content">Financial transparency and sound governance are key pillars of Saudi Vision 2030. Our actuarial services support businesses in meeting these objectives by ensuring accurate measurement and reporting of long-term obligations.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+             <!-- 11. Incorporation Services Detail (NEW) -->
+             <div id="detail-incorporation" class="service-detail-container container">
+                <div class="back-btn" onclick="closeServiceDetail()"><i class="fa-solid fa-arrow-left"></i> Back to Services</div>
+                <div class="detail-header">
+                    <h2>Company Incorporation Services in Saudi Arabia</h2>
+                    <p class="detail-intro">Big4 Consultancy provides professional company incorporation services in Saudi Arabia, supporting local and foreign investors with end-to-end business setup, licensing, and regulatory approvals. We help businesses establish their presence in Saudi Arabia efficiently, compliantly, and with full regulatory confidence.</p>
+                </div>
+                <div class="detail-grid">
+                    <div class="detail-content">
+                        <h3>Detailed Service Explanation</h3>
+                        <p>Setting up a company in Saudi Arabia requires careful planning, regulatory approvals, and coordination with multiple authorities. Our role is to simplify the incorporation process, manage regulatory requirements, and ensure your business is established correctly from the start. Our incorporation services are designed for investors, entrepreneurs, and international groups who require clear guidance, transparent timelines, and regulatory certainty.</p>
+                        
+                        <h3>Key Deliverables</h3>
+                        <ul class="detail-list">
+                            <li><strong>Entity Structure &amp; Licensing Advisory:</strong> Advising on the appropriate legal structure, licensing requirements, and regulatory approvals for your business in Saudi Arabia.</li>
+                            <li><strong>Foreign Investment &amp; Local Ownership Support:</strong> Assisting foreign investors with incorporation requirements, ownership structures, and regulatory compliance in line with Saudi laws.</li>
+                            <li><strong>Company Registration &amp; Government Approvals:</strong> Managing registrations with relevant authorities, ensuring accurate documentation and timely approvals.</li>
+                            <li><strong>Post-Incorporation Compliance Setup:</strong> Supporting post-incorporation requirements, including tax, Zakat, VAT, GOSI, and regulatory registrations to ensure full compliance from day one.</li>
+                        </ul>
+                    </div>
+                    <div class="detail-sidebar">
+                        <div class="sidebar-box">
+                            <div class="sidebar-title">Who This Is For</div>
+                            <div class="sidebar-content">Local and foreign investors. Entrepreneurs starting new ventures. International groups expanding into Saudi Arabia.</div>
+                        </div>
+                        <div class="sidebar-box regulatory-box">
+                            <div class="sidebar-title">Regulatory Relevance</div>
+                            <div class="sidebar-content">Saudi Vision 2030 encourages foreign investment, entrepreneurship, and private sector growth. Our incorporation services support these objectives by helping businesses establish compliant and transparent operations in Saudi Arabia.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- Clients Section -->
+        <section id="clients" class="section-padding">
+            <div class="container">
+                <div class="text-center reveal">
+                    <h2 class="section-title">Our Clients</h2>
+                    <p class="section-subtitle">We serve local and international companies across various industries.</p>
+                </div>
+                <div class="clients-grid reveal">
+                    <span class="client-badge">Trading</span>
+                    <span class="client-badge">Manufacturing</span>
+                    <span class="client-badge">Services</span>
+                    <span class="client-badge">Construction</span>
+                    <span class="client-badge">Retail</span>
+                    <span class="client-badge">Professional Services</span>
+                </div>
+                <p class="text-center reveal" style="margin-top: 40px; color: var(--text-light); font-style: italic; font-size: 1.1rem;">"Our clients value us for our practical approach, regulatory expertise, and responsive support."</p>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="section-padding cta-section reveal">
+            <div class="container">
+                <h2>Ready to streamline your compliance?</h2>
+                <p>Get expert advice from qualified Chartered Accountants with Big-4 experience.</p>
+                <a href="mailto:suleman@ivisionconsultancy.com" class="btn btn-primary" style="background-color: white; color: var(--primary-color);">Contact Partner Suleman ACA</a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer id="contact">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="logo" style="color: white; margin-bottom: 25px; text-decoration: none; display: inline-flex;">
+                        <i class="fa-solid fa-eye" style="color: var(--secondary-color);"></i> IVISION Consultancy
+                    </div>
+                    <p style="margin-bottom: 25px; line-height: 1.7;">IVISION Consultancy is a professional advisory firm providing accounting, tax, and corporate services in Saudi Arabia. We bring Big-4 expertise to your business.
+                    </p>
+                    <div class="footer-info">
+                        <p><i class="fa-solid fa-location-dot"></i> <span>Saudi Arabia / Bahrain</span></p>
+                        <p><i class="fa-solid fa-envelope"></i> <a href="mailto:suleman@ivisionconsultancy.com" style="color: inherit;">suleman@ivisionconsultancy.com</a></p>
+                        <p><i class="fa-solid fa-phone"></i> <a href="tel:0595227868" style="color: inherit;">0595227868</a></p>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#clients">Industries</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Key Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="#services">Tax Advisory</a></li>
+                        <li><a href="#services">Zakat Compliance</a></li>
+                        <li><a href="#services">VAT Services</a></li>
+                        <li><a href="#services">CFO Services</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>© 2023 IVISION Consultancy. All rights reserved.</p>
+                <div class="social-icons">
+                    <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Custom JS -->
+    <script src="js/script.js"></script>
+</body>
+</html>
